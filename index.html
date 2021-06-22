@@ -7,36 +7,124 @@
   <title>Tomokazu Nakajima PORTFOLIO</title>
 </head>
 <body>
+  <!-- ヘッダータイトル、メニュー（画面上部に固定） -->
   <header>
-    <h1><a href="#">Tomokazu Nakajima</a></h1>
-    <nav>
+    <h1 class="header_ttl"><a href="./index.html">Tomokazu Nakajima</a></h1>
+    <div class="header_sns_link">
       <ul>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Mail</a></li>
+        <li><a href="https://twitter.com/Satoru21540643" target="blanc">Twitter</a></li>
+        <li><a href="mailto:tomokazu04929@gmail.com">Mail</a></li>
       </ul>
-      <button>menu</button>
-      <div>
-        <ul>
+    </div>
+    <button class="header_nav_btn" type="button">menu</button>
+    <nav class="header_nav">
+      <div class="header_nav_list">
+        <ul class="header_nav_menu">
           <li><a href="">Home</a></li>
           <li><a href="">Portfolio</a></li>
           <li><a href="">About Me</a></li>
         </ul>
-        <ul>
+        <ul class="header_nav_sns">
           <li><a href="">Twitter</a></li>
           <li><a href="">Email</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <section>
-    <div>
-      <h2>Tomokazu Nakajima</h2>
+  <!-- ヘッダーここまで -->
+
+  <!-- バックグラウンドイメージ（画像を使う場合） -->
+  <!-- <img class="theme_img" src="" alt="このサイトの著者名が使われた背景画像です。"> -->
+  <!-- バックグラウンドイメージ（テキストでできる場合） -->
+  <div class="theme_bg">
+    <p>TOMOKAZU<br>NAKAJIMA</p>
+  </div>
+
+  <!-- ページ内リンク（画面左に固定） -->
+  <nav class="top_localnNav">
+    <ul class="top_localNav_list">
+      <li><a href="#top_fv">fv</a></li>
+      <li><a href="#top_portfolio">portfolio</a></li>
+      <li><a href="#top_about">about</a></li>
+      <li><a href="#top_contact">contact</a></li>
+    </ul>
+  </nav>
+  <!-- ページ内リンクここまで -->
+
+  <!-- ファーストビューセクション -->
+  <section id="top_fv">
+    <div class="top_fv_wrapper">
+      <h2 class="top_fv_ttl top_section_ttl">Tomokazu Nakajima</h2>
       <hr>
-      <p>webDesign</p>
-      <p>front-end and sales</p>
-      <p>This is My Portfolio</p>
+      <p class="top_fv_text top_section_text">webDesign<br>front-end and sales</p>
+      <p class="top_fv_text">This is My Portfolio</p>
     </div>
-    
+    <button class="top_scroll_icon" type="button">
+      <p>SCROLL</p>
+    </button>
   </section>
+  <!-- ファーストビューセクションここまで -->
+
+  <!-- ポートフォリオセクション -->
+  <section id="top_portfolio">
+    <div class="top_portfolio_ttlArea">
+      <h2 class="top_portfolio_ttl top_section_ttl">Portfolio</h2>
+      <hr>
+      <p class="top_portforio_text top_section_text">webSite</p>
+      <button class="top_portfolio_btn top_link_btn" type="button">
+        <a href="portfolio.html"><p>Showcase</p></a>
+      </button>
+    </div>
+    <div class="top_portfolio_slider">
+      <div class="top_portfolio_thum">
+        <a href="">
+          <img class="top_portfolio_img" src="" alt="ポートフォリオのサムネイル画像です。">
+          <h3><span>01</span>TITLE.com</h3>
+        </a>
+      </div>
+      <button class="top_portfolio_prev" type="button">prev</button>
+      <button class="top_portfolio_next" type="button">next</button>
+    </div>
+  </section>
+  <!-- ポートフォリオセクションここまで -->
+
+  <!-- アバウトセクション -->
+  <section id="top_about">
+    <div class="top_about_ttlArea">
+      <h2 class="top_about_ttl top_section_ttl">AboutMe</h2>
+      <hr>
+      <p class="top_about_text top_section_text">webDesign<br>make more sales</p>
+      <button class="top_about_btn top_link_btn">
+        <a href="about.html"><p>Learn More</p></a>
+      </button>
+    </div>
+    <div class="top_about_contentArea">
+      <img src="" alt="著者のイメージ画像です。">
+      <p>札幌に住んで５年、妻と娘の３人暮らし。<br>Webサイトの制作を始めて１年です。<br>浅いのかどうなのか、決して長くはないと思いますがこれまでの私の経験はサイト制作において大きな影響を与えています。<br><br>ものを売ることは人と関わること。<br>そして、人生は人と関わることだと思っています。</p>
+    </div>
+  </section>
+  <!-- アバウトセクションここまで -->
+
+  <!-- コンタクトセクション -->
+  <section id="top_contact">
+    <div class="top_contact_ttlArea">
+      <h2 class="top_contact_ttl top_section_ttl">Contact</h2>
+      <hr>
+      <p class="top_contact_text top_section_text">send me an email<br>follow up</p>
+      <p class="top_contact_subText">Twitterでのメッセージやフォロー、また<br>制作のご依頼やその他のお問い合わせもぜひお気軽にご連絡ください。</p>
+      <div class="top_contact_snsLink">
+        <button class="top_contact_sns top_link_btn">
+          <a href="https://twitter.com/Satoru21540643" target="blanc"><p>Twitter</p></a>
+        </button>
+        <button class="top_contact_sns top_link_btn">
+          <a href="mailto:tomokazu04929@gmail.com"><p>Email</p></a>
+        </button>
+      </div>
+    </div>
+    <button class="top_backtoTop_btn" type="button">
+      <a href="./index.html">Back to TOP</a>
+    </button>
+  </section>
+  <footer><p>©︎ 2021 TomokazuNakajima</p></footer>
 </body>
 </html>
