@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-body {
-  font-family: "ranga", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  color: #333;
-  background-color: #fff;
+html {
+  font-size: 62.5%;
 }
 
-    .bodyfixed {
-      position: fixed;
-      width: 100%;
-    }
+body {
+  font-family: "游教科書体 横用", "YuKyokasyo Yoko", "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体", "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
+  font-size: 62.5%;
+  color: #618abb;
+  background-color: #fff;
+}
 
 *,*::before,*::after {
   box-sizing: border-box;
@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -28,7 +29,8 @@ ul {
 }
 
 button {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: "Ranga", sans-serif;
+  font-size: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -42,4 +44,42 @@ button:hover {
   transition: .2s;
 }
 
+h1 {
+  font-family: "Ranga", sans-serif;
+  color: #fdba21;
+}
 
+h2 {
+  font-family: "Ranga", sans-serif;
+  color: #00235e;
+}
+
+
+
+
+/* ヘッダータイトル、メニュー（画面上部に固定） */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_ttl {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.header_menu {
+  display: flex;
+}
+
+.header_sns_link {
+  display: flex;
+}
+
+.header_nav {
+  display: none;
+}
