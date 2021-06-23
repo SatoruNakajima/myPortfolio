@@ -61,25 +61,135 @@ h2 {
 header {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  z-index: 10;
+  font-family: "Ranga", sans-serif;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .header_ttl {
-  font-size: 3.2rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  font-size: 2.4rem;
   font-weight: 400;
+  margin-top: 32px;
+  margin-left: 40px;
 }
 
 .header_menu {
   display: flex;
+  margin-top: 32px;
+  margin-right: 40px;
 }
 
 .header_sns_link {
   display: flex;
+  margin-right: 48px;
+  font-size: 2.4rem;
+}
+
+.header_sns_link > li:first-child {
+  margin-right: 40px;
+}
+
+.header_nav_btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 40px;
+  height: 24px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.header_nav_btn::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #618abb;
+  border-radius: 1px;
+}
+
+.header_nav_btn::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #618abb;
+  border-radius: 1px;
+}
+
+
+/* ヘッダードロワーメニュー */
+.header_nav {
+  display: none;
 }
 
 .header_nav {
-  display: none;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: #00235e;
+}
+
+/* ドロワーメニューが開いた時のボタンのスタイル */
+    .header_nav_active::before {
+      content: '';
+      position: absolute;
+      top: 45%;
+      right: 0;
+      width: 32px;
+      height: 2px;
+      background-color: #fdba21;
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+
+    .header_nav_active::after {
+      content: '';
+      position: absolute;
+      bottom: 45%;
+      right: 0;
+      width: 32px;
+      height: 2px;
+      background-color: #fdba21;
+      border-radius: 1px;
+      transform: rotate(-45deg);
+    }
+/* ボタンのスタイル指定ここまで */
+
+.header_nav_list {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  color: #fdba21;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_nav_menu {
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+
+.header_nav_sns {
+  font-size: 4rem;
 }
