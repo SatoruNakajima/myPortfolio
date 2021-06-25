@@ -39,11 +39,6 @@ button {
   appearance: none;
 }
 
-button:hover {
-  opacity: .8;
-  transition: .2s;
-}
-
 h1 {
   font-family: "Ranga", sans-serif;
   color: #fdba21;
@@ -80,6 +75,10 @@ header {
   margin-left: 40px;
 }
 
+.header_ttl:hover {
+  color: #618abb;
+}
+
 .header_menu {
   display: flex;
   margin-top: 32px;
@@ -90,6 +89,10 @@ header {
   display: flex;
   margin-right: 48px;
   font-size: 2.4rem;
+}
+
+.header_sns_link a:hover {
+  color: #b9d1ea;
 }
 
 .header_sns_link > li:first-child {
@@ -130,6 +133,11 @@ header {
   border-radius: 1px;
 }
 
+.header_nav_btn:hover::before,.header_nav_btn:hover::after {
+  background-color: #b9d1ea;
+}
+
+
 
 /* ヘッダードロワーメニュー */
 .header_nav {
@@ -137,7 +145,6 @@ header {
 }
 
 .header_nav {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -183,33 +190,33 @@ header {
   flex-direction: row-reverse;
   /* justify-content: center; */
   /* align-items: center; */
-
-  background-color: #618abb;
 }
 
 .header_nav_menu {
   width: 50%;
-  /* height: 100%; */
   font-size: 4.8rem;
   font-weight: 700;
   letter-spacing: .03em;
   border-left: 1px solid #618abb;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header_nav_sns {
   width: 50%;
-  /* height: 100%; */
   font-size: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header_nav_menu > li {
-  /* width: 80%; */
+  margin: 32px 0 32px 80px;
+}
+
+.header_nav_sns > li {
+  margin: 40px 80px 40px 0;
 }
   
 .header_nav_menu a {
@@ -219,9 +226,60 @@ header {
   text-align: center;
 }
 
+.header_nav_menu a:hover {
+  color: #618abb;
+}
+
 .header_nav_sns a {
+  position: relative;
+  top: 0;
+  left: 0;
   display: block;
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+.header_nav_sns a::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: calc(50% - 120px);
+  width: 16rem;
+  border-bottom: 1px solid #fdba21;
+}
+
+.header_nav_sns a::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: calc(50% - 120px);
+  width: 2rem;
+  border-bottom: 1px solid #fdba21;
+  transform-origin: right bottom;
+  transform: rotate(30deg);
+}
+
+.header_nav_sns a:hover {
+  color: #618abb;
+}
+
+.header_nav_sns a:hover::before,.header_nav_sns a:hover::after {
+  border-color: #618abb;
+}
+
+/* ヘッダードロワーメニューここまで */
+/* ヘッダーここまで */
+
+/* バックグラウンドイメージ */
+
+.theme_bg {
+  /* position: absolute; */
+
+  font-family: Ranga;
+  font-size: 50vh;
+  font-weight: 700;
+  text-indent: 1em;
+  opacity: .15;
+  overflow: hidden;
 }
