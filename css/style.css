@@ -137,8 +137,6 @@ header {
   background-color: #b9d1ea;
 }
 
-
-
 /* ヘッダードロワーメニュー */
 .header_nav {
   display: none;
@@ -267,9 +265,9 @@ header {
 .header_nav_sns a:hover::before,.header_nav_sns a:hover::after {
   border-color: #618abb;
 }
-
 /* ヘッダードロワーメニューここまで */
 /* ヘッダーここまで */
+
 
 /* バックグラウンドイメージ */
 .theme_bg {
@@ -283,21 +281,46 @@ header {
 
 .theme_bg p {
   font-family: Ranga;
-  font-size: 75vh;
+  font-size: 80vh;
   font-weight: 700;
-  line-height: .8;
+  line-height: .75;
   opacity: .1;
 }
 
 .theme_bg p:first-child {
-  text-indent: calc(35% + .6em);
+  text-indent: calc(25% + .6em);
 }
 
 .theme_bg p:last-child {
-  text-indent: 35%;
-  line-height: .54;
+  text-indent: 25%;
+  line-height: .59;
 }
-
 /* バックグラウンドイメージここまで */
 
 
+/* ページ内リンク */
+.top_localNav {
+  position: fixed;
+  top: 35%;
+  left: 1.5rem;
+  width: 5rem;
+}
+
+.top_localNav_list li {
+  /* text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; */
+}
+
+
+
+
+
+
+
+
+
+
+#top_fv,#top_prtfolio,#top_about,#top_contact,footer {
+  /* display: none; */
+}
