@@ -303,6 +303,7 @@ header {
   position: fixed;
   top: 35%;
   left: 1.5rem;
+  z-index: 10;
   width: 5rem;
 }
 
@@ -310,6 +311,7 @@ header {
   /* text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; */
+  margin: 10px;
 }
 
 
@@ -320,7 +322,3 @@ header {
 
 
 
-
-#top_fv,#top_prtfolio,#top_about,#top_contact,footer {
-  /* display: none; */
-}
