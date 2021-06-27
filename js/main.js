@@ -1,10 +1,18 @@
-
-var scene = document.getElementById('bg');
+// パララックス
+// bg
+var bg = document.getElementById('bg');
 var parallaxInstance = new Parallax(bg, {
   relativeInput: true
 });
 
+// top_fv
+var top_fv = document.getElementById('top_fv');
+var parallaxInstance = new Parallax(top_fv, {
+  relativeInput: true
+});
+// パララックスここまで
 
+// フルページスクロール
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		autoScrolling:true,
