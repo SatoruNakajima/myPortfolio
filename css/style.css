@@ -304,21 +304,43 @@ header {
   top: 35%;
   left: 1.5rem;
   z-index: 10;
-  width: 5rem;
+  width: 60px;
 }
 
 .top_localNav_list li {
-  /* text-indent: 100%;
+  text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden; */
-  margin: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
 }
 
+.top_localNav_list a {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.top_localNav_list a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5rem;
+  width: 24px;
+  height: 2px;
+  background-color: #00235e;
+  border-radius: 1px;
+  transition: width .7s;
+}
+
+.active a::before {
+  content: '';
+  width: 40px;
+  transition: width .7s;
+}
+/* ページ内リンクここまで */
 
 
-
-
-
-
+/* ファーストビューセクション */
 
 

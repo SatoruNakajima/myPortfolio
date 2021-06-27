@@ -8,8 +8,7 @@ var parallaxInstance = new Parallax(bg, {
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		autoScrolling:true,
-		scrollHorizontally: true,
-		anchors: ['fv', 'portfolio', 'about', 'contact'],
-		menu: '#top_menu'
+		menu: '#top_menu',
+		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact']
 	});
 });
