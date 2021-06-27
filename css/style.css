@@ -301,10 +301,9 @@ header {
 /* ページ内リンク */
 .top_localNav {
   position: fixed;
-  top: 35%;
-  left: 1.5rem;
+  top: 40%;
+  left: 4rem;
   z-index: 10;
-  width: 60px;
 }
 
 .top_localNav_list li {
@@ -318,6 +317,8 @@ header {
   position: relative;
   top: 0;
   left: 0;
+  display: block;
+  width: 4rem;
 }
 
 .top_localNav_list a::before {
@@ -325,10 +326,10 @@ header {
   display: block;
   position: absolute;
   top: 0;
-  left: -5rem;
+  left: 0;
   width: 24px;
   height: 2px;
-  background-color: #00235e;
+  background-color: #618abb;
   border-radius: 1px;
   transition: width .7s;
 }
@@ -338,9 +339,84 @@ header {
   width: 40px;
   transition: width .7s;
 }
+
+.top_localNav_list a:hover::before {
+  background-color: #b9d1ea;
+}
 /* ページ内リンクここまで */
 
 
 /* ファーストビューセクション */
+.top_fv_wrapper {
+  position: absolute;
+  top: 25%;
+  left: 18rem;
+}
+
+.top_section_ttl {
+  font-size: 10.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.top_section_text {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  color: #fdba21;
+  margin-bottom: 1.4rem;
+}
+
+.top_section_text::before {
+  content: '';
+  display: block;
+  position: relative;
+  top: -1rem;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #618abb;
+  border-radius: 1px;
+}
+
+.top_fv_text {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #618abb;
+}
+
+/* スクロールアイコン */
+.top_scroll_icon {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 50%;
+  font-size: 2.2rem;
+  transform: translateX(-50%);
+  animation: scroll_down 2s infinite;
+  cursor: default;
+}
+
+.top_scroll_icon p::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: -1rem;
+  left: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-right: 1px solid #00235e;
+  border-bottom: 1px solid #00235e;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+@keyframes scroll_down {
+  0% {bottom: 2.4rem;}
+  70% {bottom: 1.2rem}
+  100% {bottom: 2.4rem;}
+}
+/* スクロールアイコンここまで */
+/* ファーストビューセクションここまで */
 
 
+/* ポートフォリオセクション */
