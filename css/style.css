@@ -359,7 +359,6 @@ header {
   font-size: 10.5rem;
   font-weight: 700;
   white-space: nowrap;
-  overflow: hidden;
   margin-bottom: 1rem;
 }
 
@@ -425,8 +424,8 @@ header {
 .top_portfolio_ttlArea {
   position: absolute;
   top: 28%;
-  right: 18%;
-  z-index: 10;
+  left: 60%;
+  z-index: 5;
 }
 
 .top_portfolio_text {
@@ -496,8 +495,107 @@ header {
 
 /* トップページポートフォリオスライダー */
 .top_portfolio_slider {
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  position: relative;
+  top: 0;
+  left: 15%;
   z-index: 0;
 }
+
+.top_portfolio_slides {
+  width: 44rem;
+}
+
+.top_portfolio_img {
+  width: 44rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.top_portfolio_slides h3 {
+  font-family: "Ranga", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #00235e;
+  line-height: .4;
+  padding-bottom: .5rem;
+
+}
+
+.top_portfolio_slides span {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: #618abb
+}
+
+.top_portfolio_slides span::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -0.7rem;
+  left: 0;
+  width: 2rem;
+  height: 1px;
+  background-color: #618abb;
+  margin: 0 .8rem;
+}
+
+/* スライドアロー */
+.slide_arrow {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .1);
+}
+
+.top_portfolio_prev {
+  position: absolute;
+  top: 17rem;
+  left: -6%;
+  z-index: 10;
+}
+
+.top_portfolio_next {
+  position: absolute;
+  top: 17rem;
+  right: -6%;
+  z-index: 10;
+}
+
+.top_portfolio_prev::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: -0.7rem;
+  left: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-bottom: 1px solid #618abb;
+  border-left: 1px solid #618abb;
+  transform: rotate(45deg);
+}
+
+.top_portfolio_next::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: -0.6rem;
+  left: 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-top: 1px solid #618abb;
+  border-right: 1px solid #618abb;
+  transform: rotate(45deg);
+}
+
+.slide_arrow:hover {
+  background-color: #b9d1ea;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+}
+
+.slide_arrow:hover::after {
+  border-color: #00235e;
+}
+/* スライドアローここまで */
