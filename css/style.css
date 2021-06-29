@@ -57,7 +57,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   font-family: "Ranga", sans-serif;
   width: 100%;
   display: flex;
@@ -277,6 +277,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -100;
 }
 
 .theme_bg p {
@@ -351,6 +352,7 @@ header {
   position: absolute;
   top: 25%;
   left: 18rem;
+  z-index: 10;
 }
 
 .top_section_ttl {
@@ -420,3 +422,82 @@ header {
 
 
 /* ポートフォリオセクション */
+.top_portfolio_ttlArea {
+  position: absolute;
+  top: 28%;
+  right: 18%;
+  z-index: 10;
+}
+
+.top_portfolio_text {
+  color: #618abb;
+  margin-bottom: 8rem;
+}
+
+/* トップページリンクボタン */
+.top_link_btn > a {
+  display: block;
+  width: 18rem;
+  height: 4rem;
+  color: #fdba21;
+  background-color: #00235e;
+  border-radius: 2rem;
+  transition: color .3s, background-color .3s;
+}
+
+.top_link_btn p {
+  font-size: 2rem;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: .1rem;
+  margin-right: 2rem;
+}
+
+.top_link_btn a::before {
+  content: '';
+  display: block;
+  position: relative;
+  top: 2.6rem;
+  left: 4.5rem;
+  width: 10rem;
+  height: 1px;
+  background-color: #fdba21;
+  border-radius: .5px;
+}
+
+.top_link_btn a::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: -1.8rem;
+  left: 13.5rem;
+  width: 1rem;
+  border-top: 1px solid #fdba21;
+  transform: rotate(30deg);
+}
+
+.top_link_btn > a:hover {
+  background-color: #fdba21;
+  color: #00235e;
+  border: 1px solid #00235e;
+  transition: color .3s, background-color .3s;
+}
+
+.top_link_btn a:hover::before {
+  background-color: #00235e;
+  transition: background-color .3s;
+}
+
+.top_link_btn a:hover::after {
+  border-color: #00235e;
+  transition: border-color .3s;
+}
+/* トップページリンクボタンここまで */
+
+/* トップページポートフォリオスライダー */
+.top_portfolio_slider {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 0;
+}
