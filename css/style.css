@@ -428,25 +428,28 @@ header {
   z-index: 5;
 }
 
-.top_portfolio_text {
+.top_section_text {
   color: #618abb;
-  margin-bottom: 8rem;
+}
+
+.top_portfolio_text {
+  margin-bottom: 10rem;
 }
 
 /* トップページリンクボタン */
 .top_link_btn > a {
   display: block;
   width: 18rem;
-  height: 4rem;
+  height: 4.5rem;
   color: #fdba21;
   background-color: #00235e;
-  border-radius: 2rem;
+  border-radius: 2.25rem;
   transition: color .3s, background-color .3s;
 }
 
 .top_link_btn p {
   font-size: 2rem;
-  line-height: 2;
+  line-height: 2.25;
   text-align: center;
   letter-spacing: .1rem;
   margin-right: 2rem;
@@ -456,7 +459,7 @@ header {
   content: '';
   display: block;
   position: relative;
-  top: 2.6rem;
+  top: 2.9rem;
   left: 4.5rem;
   width: 10rem;
   height: 1px;
@@ -468,7 +471,7 @@ header {
   content: '';
   display: block;
   position: relative;
-  top: -1.8rem;
+  top: -2rem;
   left: 13.5rem;
   width: 1rem;
   border-top: 1px solid #fdba21;
@@ -508,6 +511,14 @@ header {
 .top_portfolio_img {
   width: 44rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.top_portfolio_slides a:hover img {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  filter: brightness(.9) saturate(2);
 }
 
 .top_portfolio_slides h3 {
@@ -599,3 +610,75 @@ header {
   border-color: #00235e;
 }
 /* スライドアローここまで */
+/* トップページスライダーここまで */
+/* ポートフォリオセクションここまで */
+
+
+/* アバウトセクション */
+.top_about_ttlArea {
+  position: absolute;
+  top: 28%;
+  left: 60%;
+  z-index: 5;
+}
+
+.top_about_text {
+  margin-bottom: 8rem;
+}
+
+.top_about_btn a::before {
+  content: '';
+  left: 4rem;
+  width: 10.5rem;
+}
+
+
+.top_about_contentArea {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: 0;
+}
+
+.top_about_contentArea img {
+  width: 26rem;
+  margin: 0 auto 2rem;
+}
+
+.top_about_contentArea p {
+  font-size: 1.3rem;
+  width: 32rem;
+  letter-spacing: .2px;
+  line-height: 1.6;
+}
+/* アバウトセクションここまで */
+
+
+/* コンタクトセクション */
+.top_contact_ttlArea {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+}
+
+.top_contact_ttlWrapper {
+  width: 26rem;
+  margin: 0 auto 6rem;
+}
+
+.top_contact_subText {
+  font-size: 1.3rem;
+  letter-spacing: .2px;
+  line-height: 1.6;
+  width: 44rem;
+  margin: 0 auto 3rem;
+}
+
+.top_contact_snsLink {
+  text-align: center;
+}
+
+.top_contact_sns:first-child {
+  margin-right: 5rem;
+}
