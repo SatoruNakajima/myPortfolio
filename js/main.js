@@ -30,17 +30,19 @@ $(function() {
 		autoScrolling:true,
 		menu: '#top_menu',
 		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact'],
-    onLeave: function(index, nextIndex, direction){
-            if(index == 3 && direction =='down'){
-            //セクション3を下にスクロールしたとき実行されます
-            $('footer').stop(true).animate({
-              visibility: 'visible'
-            }, 500);
+    onLeave: function(index, destination, direction){
+            if(destination == 4 && direction =='down'){
+                //セクション4へ下にスクロールしたとき実行
+                $('footer').stop(true).css({
+                  bottom: '2rem',
+                  transition: '.8s'
+                });
             }
             else if(index == 4 && direction =='up')
-            //セクション4を上にスクロールしたときに実行されます
-            $('footer').stop(true).animate({
-              visibility: 'hidden'
+            //セクション4を上にスクロールしたときに実行
+            $('footer').stop(true).css({
+              bottom: '-5rem',
+              transition: '.3s'
             });
         }
       
