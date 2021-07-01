@@ -121,6 +121,8 @@ header {
   height: 2px;
   background-color: #618abb;
   border-radius: 1px;
+  transform: rotate(180deg);
+  transition: transform .5s, width .5s;
 }
 
 .header_nav_btn::after {
@@ -132,6 +134,8 @@ header {
   height: 2px;
   background-color: #618abb;
   border-radius: 1px;
+  transform: rotate(-180deg);
+  transition: transform .5s, width .5s;
 }
 
 .header_nav_btn:hover::before,.header_nav_btn:hover::after {
@@ -162,6 +166,7 @@ header {
       background-color: #fdba21;
       border-radius: 1px;
       transform: rotate(45deg);
+      transition: transform .5s;
     }
 
     .header_nav_active::after {
@@ -174,6 +179,7 @@ header {
       background-color: #fdba21;
       border-radius: 1px;
       transform: rotate(-45deg);
+      transition: transform .5s;
     }
 /* ボタンのスタイル指定ここまで */
 
@@ -764,12 +770,13 @@ header {
 
 /* フッター */
 footer {
-  display: none;
+  visibility: hidden;
   position: absolute;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Ranga", sans-serif;
   font-size: 1.4rem;
+  transition: visibility 0s;
 }
 /* フッターここまで */

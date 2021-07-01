@@ -6,7 +6,7 @@ $(function() {
       header_nav = $('.header_nav');
   header_nav_btn.click(function(){
     $(this).toggleClass('header_nav_active');
-    $('.header_nav').stop(true).slideToggle(500);
+    header_nav.stop(true).slideToggle(500);
   });
 
 
@@ -29,7 +29,21 @@ $(function() {
 	$('#fullpage').fullpage({
 		autoScrolling:true,
 		menu: '#top_menu',
-		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact']
+		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact'],
+    onLeave: function(index, nextIndex, direction){
+            if(index == 3 && direction =='down'){
+            //セクション3を下にスクロールしたとき実行されます
+            $('footer').stop(true).animate({
+              visibility: 'visible'
+            }, 500);
+            }
+            else if(index == 4 && direction =='up')
+            //セクション4を上にスクロールしたときに実行されます
+            $('footer').stop(true).animate({
+              visibility: 'hidden'
+            });
+        }
+      
 	});
 
 
@@ -42,6 +56,7 @@ $(function() {
     prevArrow: '<button type="button"  aria-lavel="Previous" class="top_portfolio_prev slide_arrow">prev</button>',
     nextArrow: '<button type="button" aria-label="Next" class="top_portfolio_next slide_arrow">next</button>',
   });
+
 
 
 });
