@@ -99,6 +99,7 @@ header {
   margin-right: 40px;
 }
 
+/* ヘッダーメニューボタン */
 .header_nav_btn {
   position: relative;
   top: 0;
@@ -362,8 +363,11 @@ header {
 .top_section_text {
   font-size: 2.2rem;
   line-height: 1.3;
-  color: #fdba21;
   margin-bottom: 1.4rem;
+}
+
+.top_fv_text {
+  color: #fdba21;
 }
 
 .top_section_text::before {
@@ -378,7 +382,7 @@ header {
   border-radius: 1px;
 }
 
-.top_fv_text {
+.top_fv_subtext {
   font-size: 1.6rem;
   line-height: 1.3;
   color: #618abb;
@@ -423,10 +427,6 @@ header {
   top: 27%;
   left: 60%;
   z-index: 5;
-}
-
-.top_section_text {
-  color: #618abb;
 }
 
 .top_portfolio_text {
@@ -496,17 +496,17 @@ header {
 /* トップページポートフォリオスライダー */
 .top_portfolio_slider {
   position: absolute;
-  top: 24%;
+  top: 21%;
   left: 15%;
   z-index: 0;
 }
 
 .top_portfolio_slides {
-  width: 44rem;
+  width: 45rem;
 }
 
 .top_portfolio_img {
-  width: 44rem;
+  width: 45rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
@@ -551,8 +551,8 @@ header {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, .1);
@@ -560,15 +560,15 @@ header {
 
 .top_portfolio_prev {
   position: relative;
-  top: 17rem;
-  left: -6%;
+  top: 20rem;
+  left: -3%;
   z-index: 10;
 }
 
 .top_portfolio_next {
   position: relative;
-  top: -17rem;
-  left: 43.5rem;
+  top: -15.6rem;
+  left: 94%;
   z-index: 10;
 }
 
@@ -576,8 +576,8 @@ header {
   content: '';
   display: block;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 1.5rem;
+  left: 1.5rem;
   width: 1.2rem;
   height: 1.2rem;
   border-bottom: 1px solid #618abb;
@@ -589,8 +589,8 @@ header {
   content: '';
   display: block;
   position: absolute;
-  top: 1rem;
-  left: .8rem;
+  top: 1.5rem;
+  left: 1.2rem;
   width: 1.2rem;
   height: 1.2rem;
   border-top: 1px solid #618abb;
@@ -638,13 +638,13 @@ header {
 }
 
 .top_about_contentArea img {
-  width: 26rem;
-  margin: 0 auto 2rem;
+  width: 24rem;
+  margin: 0 auto 1.5rem;
 }
 
 .top_about_contentArea p {
-  font-size: 1.3rem;
-  width: 32rem;
+  font-size: 1.2rem;
+  width: 36rem;
   letter-spacing: .2px;
   line-height: 1.6;
 }
