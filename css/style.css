@@ -190,8 +190,6 @@ header {
   color: #fdba21;
   display: flex;
   flex-direction: row-reverse;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .header_nav_menu {
@@ -402,7 +400,9 @@ header {
   font-size: 2.2rem;
   transform: translateX(-50%);
   animation: scroll_down 2s infinite;
-  cursor: default;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .top_scroll_icon p::after {
@@ -413,8 +413,8 @@ header {
   left: 50%;
   width: 1.6rem;
   height: 1.6rem;
-  border-right: 1px solid #00235e;
-  border-bottom: 1px solid #00235e;
+  border-right: 2px solid #00235e;
+  border-bottom: 2px solid #00235e;
   transform: translateX(-50%) rotate(45deg);
 }
 
@@ -657,11 +657,8 @@ header {
 /* アバウトセクションここまで */
 
 
-コンタクトセクション
+/* コンタクトセクション */
 .top_contact_ttlArea {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 100%;
   height: 100vh;
 }
@@ -770,9 +767,9 @@ header {
 
 /* フッター */
 footer {
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
-  bottom: 2rem;
+  bottom: -5rem;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Ranga", sans-serif;
