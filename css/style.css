@@ -395,7 +395,7 @@ header {
 /* スクロールアイコン */
 .top_scroll_icon {
   position: absolute;
-  bottom: 2.4rem;
+  bottom: 3.2rem;
   left: 50%;
   font-size: 2.2rem;
   transform: translateX(-50%);
@@ -419,9 +419,9 @@ header {
 }
 
 @keyframes scroll_down {
-  0% {bottom: 2.4rem;}
-  70% {bottom: 1.2rem}
-  100% {bottom: 2.4rem;}
+  0% {bottom: 3.2rem;}
+  70% {bottom: 2.0rem}
+  100% {bottom: 3.2rem;}
 }
 /* スクロールアイコンここまで */
 /* ファーストビューセクションここまで */
@@ -649,7 +649,7 @@ header {
 }
 
 .top_about_contentArea p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 36rem;
   letter-spacing: .2px;
   line-height: 1.6;
@@ -659,6 +659,9 @@ header {
 
 /* コンタクトセクション */
 .top_contact_ttlArea {
+  position: absolute;
+  top: 30%;
+  left: 0;
   width: 100%;
   height: 100vh;
 }
@@ -679,10 +682,10 @@ header {
 }
 
 .top_contact_subText {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: .2px;
   line-height: 1.6;
-  width: 43rem;
+  width: 46rem;
   margin: 0 auto 3rem;
 }
 
@@ -690,7 +693,7 @@ header {
   position: relative;
   top: 0;
   left: 0;
-  width: 44rem;
+  width: 47rem;
   margin:0 auto;
 }
 
