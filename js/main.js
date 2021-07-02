@@ -34,14 +34,14 @@ $(function() {
             if(destination == 4 && direction =='down'){
                 //セクション4へ下にスクロールしたとき実行
                 $('footer').stop(true).css({
-                  bottom: '2rem',
+                  bottom: '20px',
                   transition: '.8s'
                 });
             }
             else if(index == 4 && direction =='up')
             //セクション4を上にスクロールしたときに実行
             $('footer').stop(true).css({
-              bottom: '-5rem',
+              bottom: '-50px',
               transition: '.3s'
             });
         }
