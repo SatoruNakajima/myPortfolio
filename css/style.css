@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
 }
 
 body {
   font-family: "游教科書体 横用", "YuKyokasyo Yoko", "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体", "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
-  font-size: 62.5%;
+  font-size: 10px;
   color: #618abb;
   background-color: #fff;
 }
@@ -69,7 +69,7 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: 400;
   margin-top: 32px;
   margin-left: 40px;
@@ -88,7 +88,7 @@ header {
 .header_sns_link {
   display: flex;
   margin-right: 48px;
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 .header_sns_link a:hover {
@@ -194,9 +194,9 @@ header {
 
 .header_nav_menu {
   width: 50%;
-  font-size: 4.8rem;
+  font-size: 48px;
   font-weight: 700;
-  letter-spacing: .03em;
+  letter-spacing: 2px;
   border-left: 1px solid #618abb;
   display: flex;
   flex-direction: column;
@@ -205,7 +205,7 @@ header {
 
 .header_nav_sns {
   width: 50%;
-  font-size: 4rem;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +245,7 @@ header {
   position: absolute;
   bottom: 10px;
   right: calc(50% - 120px);
-  width: 16rem;
+  width: 160px;
   border-bottom: 1px solid #fdba21;
 }
 
@@ -254,7 +254,7 @@ header {
   position: absolute;
   bottom: 10px;
   right: calc(50% - 120px);
-  width: 2rem;
+  width: 20px;
   border-bottom: 1px solid #fdba21;
   transform-origin: right bottom;
   transform: rotate(30deg);
@@ -305,7 +305,7 @@ header {
 .top_localNav {
   position: fixed;
   top: 40%;
-  left: 4rem;
+  left: 40px;
   z-index: 10;
 }
 
@@ -321,7 +321,7 @@ header {
   top: 0;
   left: 0;
   display: block;
-  width: 4rem;
+  width: 40px;
 }
 
 .top_localNav_list a::before {
@@ -380,7 +380,7 @@ header {
   position: relative;
   top: -1rem;
   left: 0;
-  width: 40px;
+  width: 4rem;
   height: 2px;
   background-color: #618abb;
   border-radius: 1px;
@@ -411,8 +411,8 @@ header {
   position: relative;
   top: -1rem;
   left: 50%;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 16px;
+  height: 16px;
   border-right: 2px solid #00235e;
   border-bottom: 2px solid #00235e;
   transform: translateX(-50%) rotate(45deg);
@@ -442,29 +442,29 @@ header {
 /* トップページリンクボタン */
 .top_link_btn > a {
   display: block;
-  width: 18rem;
-  height: 4.5rem;
+  width: 180px;
+  height: 45px;
   color: #fdba21;
   background-color: #00235e;
-  border-radius: 2.25rem;
+  border-radius: 22.5px;
   transition: color .3s, background-color .3s;
 }
 
 .top_link_btn p {
-  font-size: 2rem;
+  font-size: 20px;
   line-height: 2.25;
   text-align: center;
-  letter-spacing: .1rem;
-  margin-right: 2rem;
+  letter-spacing: 1px;
+  margin-right: 20px;
 }
 
 .top_link_btn a::before {
   content: '';
   display: block;
   position: relative;
-  top: 2.9rem;
-  left: 4.5rem;
-  width: 10rem;
+  top: 29px;
+  left: 45px;
+  width: 100px;
   height: 1px;
   background-color: #fdba21;
   border-radius: .5px;
@@ -474,9 +474,9 @@ header {
   content: '';
   display: block;
   position: relative;
-  top: -2rem;
-  left: 13.5rem;
-  width: 1rem;
+  top: -20px;
+  left: 135px;
+  width: 10px;
   border-top: 1px solid #fdba21;
   transform: rotate(30deg);
 }
@@ -508,11 +508,11 @@ header {
 }
 
 .top_portfolio_slides {
-  width: 45rem;
+  width: 450px;
 }
 
 .top_portfolio_img {
-  width: 45rem;
+  width: 450px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
@@ -526,16 +526,16 @@ header {
 
 .top_portfolio_slides h3 {
   font-family: "Ranga", sans-serif;
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: 400;
   color: #00235e;
   line-height: .4;
-  padding-bottom: .5rem;
+  padding-bottom: 5px;
 
 }
 
 .top_portfolio_slides span {
-  font-size: 5.6rem;
+  font-size: 56px;
   font-weight: 700;
   color: #618abb
 }
@@ -544,12 +544,12 @@ header {
   content: '';
   display: inline-block;
   position: relative;
-  top: -0.7rem;
+  top: -7px;
   left: 0;
-  width: 2rem;
+  width: 20px;
   height: 1px;
   background-color: #618abb;
-  margin: 0 .8rem;
+  margin: 0 8px;
 }
 
 /* スライドアロー */
@@ -557,8 +557,8 @@ header {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, .1);
@@ -566,14 +566,14 @@ header {
 
 .top_portfolio_prev {
   position: relative;
-  top: 20rem;
+  top: 200px;
   left: -3%;
   z-index: 10;
 }
 
 .top_portfolio_next {
   position: relative;
-  top: -15.6rem;
+  top: -156px;
   left: 94%;
   z-index: 10;
 }
@@ -582,10 +582,10 @@ header {
   content: '';
   display: block;
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  width: 1.2rem;
-  height: 1.2rem;
+  top: 15px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
   border-bottom: 1px solid #618abb;
   border-left: 1px solid #618abb;
   transform: rotate(45deg);
@@ -595,10 +595,10 @@ header {
   content: '';
   display: block;
   position: absolute;
-  top: 1.5rem;
-  left: 1.2rem;
-  width: 1.2rem;
-  height: 1.2rem;
+  top: 15px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
   border-top: 1px solid #618abb;
   border-right: 1px solid #618abb;
   transform: rotate(45deg);
@@ -631,8 +631,8 @@ header {
 
 .top_about_btn a::before {
   content: '';
-  left: 4rem;
-  width: 10.5rem;
+  left: 40px;
+  width: 105px;
 }
 
 
@@ -644,8 +644,8 @@ header {
 }
 
 .top_about_contentArea img {
-  width: 24rem;
-  margin: 0 auto 1.5rem;
+  width: 240px;
+  margin: 0 auto 15px;
 }
 
 .top_about_contentArea p {
@@ -682,18 +682,18 @@ header {
 }
 
 .top_contact_subText {
-  font-size: 1.4rem;
+  font-size: 14px;
   letter-spacing: .2px;
   line-height: 1.6;
-  width: 46rem;
-  margin: 0 auto 3rem;
+  width: 460px;
+  margin: 0 auto 30px;
 }
 
 .top_contact_snsLink {
   position: relative;
   top: 0;
   left: 0;
-  width: 47rem;
+  width: 470px;
   margin:0 auto;
 }
 
@@ -707,7 +707,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  margin-right: 1.4rem;
+  margin-right: 14px;
 }
 
 .top_contact_sns:last-child > a {
@@ -745,17 +745,17 @@ header {
   position: absolute;
   bottom: 24px;
   left: 40px;
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .top_backtoTop_btn a::before {
   content: '';
   display: block;
   position: absolute;
-  top: -1rem;
+  top: -10px;
   left: 50%;
-  width: 1rem;
-  height: 1rem;
+  width: 10px;
+  height: 10px;
   border-top: 1px solid #00235e;
   border-left: 1px solid #00235e;
   transform: translateX(-50%) rotate(45deg);
@@ -770,13 +770,86 @@ header {
 
 /* フッター */
 footer {
-  /* visibility: hidden; */
   position: absolute;
-  bottom: -5rem;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Ranga", sans-serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   transition: visibility 0s;
 }
 /* フッターここまで */
+
+
+/* 横幅1023px以下 */
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 8px;
+  }
+
+  body {
+    font-size: 8px;
+  }
+
+  /* トップページローカルナビ */
+  .top_localNav {
+    top: auto;
+    bottom: 40px;
+  }
+
+  /* ポートフォリオセクション */
+  .top_portfolio_ttlArea {
+    top: 16%;
+    left: 40px;
+  }
+
+  .top_portfolio_btn {
+    position: relative;
+    top: 250px;
+    left: calc(50vw - 265px);
+  }
+
+  .top_portfolio_slider {
+    top: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* アバウトセクション */
+  .top_about_ttlArea {
+    top: 16%;
+    left: 40px;
+  }
+
+  .top_about_btn {
+    position: relative;
+    top: 160px;
+    left: 40vw;
+  }
+
+  .top_about_contentArea {
+    top: 38%;
+    left: 10%;
+  } 
+
+
+  .top_about_contentArea p {
+    position: absolute;
+    top: 40px;
+    left: calc(40vw - 20%);
+  }
+
+  /* コンタクトセクション */
+  /* .top_contact_ttlWrapper {
+    top: -10%;
+    left: 40px;
+    transform: translateX(0);
+  } */
+
+  .top_backtoTop_btn {
+    left: auto;
+    right: 40px;
+  }
+
+
+}
