@@ -183,6 +183,7 @@ header {
     }
 /* ボタンのスタイル指定ここまで */
 
+/* ドロワーメニューのスタイル */
 .header_nav_list {
   width: 80%;
   height: 84vh;
@@ -928,4 +929,41 @@ footer {
   }
 
   /* ヘッダーメニューボタン */
+  .header_nav_btn::before {
+    content: '';
+    top: 2px;
+    width: 26px;
+    height: 1.5px;
+    border-radius: .75px;
+  }
+  
+  .header_nav_btn::after {
+    content: '';
+    bottom: 12px;
+    width: 13px;
+    height: 1.5px;
+    border-radius: .75px;
+  }
+  
+  /* ドロワーメニューが開いた時のボタンのスタイル */
+  .header_nav_active::before {
+    content: '';
+    top: 50%;
+    width: 28px;
+    height: 1.5px;
+    border-radius: .75px;
+  }
+
+  .header_nav_active::after {
+    content: '';
+    bottom: 44%;
+    width: 28px;
+    height: 1.5px;
+    border-radius: .75px;
+  }
+
+  /* ドロワーメニューのスタイル */
+  .header_nav {
+    padding: 0 5vw;
+  }
 }
