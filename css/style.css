@@ -842,12 +842,6 @@ footer {
   }
 
   /* コンタクトセクション */
-  /* .top_contact_ttlWrapper {
-    top: -10%;
-    left: 40px;
-    transform: translateX(0);
-  } */
-
   .top_backtoTop_btn {
     left: auto;
     right: 40px;
@@ -1196,31 +1190,40 @@ footer {
 
   .top_contact_link {
     top: auto;
-    left: auto;
+    left: 3vw;
+    width: 94vw;
+    padding-right: 3vw;
     transform: none;
   }
 
   .top_contact_subText {
+    display: table;
     font-size: 12px;
-    width: 94vw;
+    width: auto;
   }
 
   .top_contact_snsLink {
-    max-width: 94vw;
+    width: auto;
   }
 
   .top_contact_sns:first-child {
+    left: 50%;
+    transform: translateX(-112%);
   }
-
+  
   .top_contact_sns:last-child {
-    right: 3vw;
-    margin-right: 0;
+    right: 50%;
+    transform: translateX(112%);
   }
-
-
-
 
   .top_backtoTop_btn {
     right: 3vw;
+    font-size: 16px;
+  }
+
+  .top_backtoTop_btn a::before {
+    content: '';
+    width: 10px;
+    height: 10px;
   }
 }
