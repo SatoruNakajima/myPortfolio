@@ -1,5 +1,15 @@
 $(function() {
 
+// ローディングアニメ
+  var loader = $('#loader');
+
+    //ページの読み込みが完了したらアニメーションを非表示
+    $(window).on('load',function(){
+      loader.fadeOut();
+    });
+
+
+
 
 // ドロワーメニュー開閉
   var header_nav_btn = $('#header_nav_btn'),
