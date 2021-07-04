@@ -909,18 +909,18 @@ footer {
 @media screen and (max-width: 768px) {
   /* ヘッダー */
   .header_ttl {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 4vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
   }
 
   .header_menu {
     margin-top: 4vw;
-    margin-right: 2vw;
+    margin-right: 3vw;
   }
 
   .header_sns_link {
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 4.8vw;
   }
 
@@ -931,18 +931,18 @@ footer {
   /* ヘッダーメニューボタン */
   .header_nav_btn::before {
     content: '';
-    top: 2px;
-    width: 26px;
-    height: 1.5px;
-    border-radius: .75px;
+    top: 4px;
+    width: 28px;
+    height: 2px;
+    border-radius: 1px;
   }
   
   .header_nav_btn::after {
     content: '';
-    bottom: 12px;
-    width: 13px;
-    height: 1.5px;
-    border-radius: .75px;
+    bottom: 10px;
+    width: 14px;
+    height: 2px;
+    border-radius: 1px;
   }
   
   /* ドロワーメニューが開いた時のボタンのスタイル */
@@ -975,7 +975,7 @@ footer {
 
   .header_nav_menu {
     width: 100%;
-    height: 60%;
+    height: 55%;
     font-size: 8vw;
     border-left: none;
     border-bottom: 1px solid #618abb;
@@ -983,7 +983,7 @@ footer {
 
   .header_nav_sns {
     width: 100%;
-    height: 40%;
+    height: 45%;
     font-size: 6vw;
   }
 
@@ -1029,7 +1029,7 @@ footer {
   /* トップページローカルナビ */
   .top_localNav {
     bottom: 2vh;
-    left: 2vw;
+    left: 3vw;
   }
 
   .top_localNav_list li {
@@ -1055,11 +1055,11 @@ footer {
   
   /* ファーストビューセクション */
   .top_fv_wrapper {
-    left: 2vw;
+    left: 3vw;
   }
 
   .top_section_ttl {
-    font-size: 14.5vw;
+    font-size: 14vw;
   }
 
   .top_section_text {
@@ -1071,5 +1071,116 @@ footer {
   }
 
   /* ポートフォリオセクション */
+  .top_portfolio_ttlArea {
+    top: calc(20% - 8vw);
+    left: 3vw;
+  }
+
+  .top_portfolio_text {
+    margin-bottom: 0;
+  }
+
+  .top_portfolio_btn {
+    top: auto;
+    left: auto;
+  }
+
+  /* トップページリンクボタン */
+  .top_portfolio_btn {
+    top: calc(95vw * 0.64 + 72px);
+  }
+  .top_link_btn > a {
+    width: 120px;
+    height: 32px;
+    border-radius: 20px;
+  }
+
+  .top_link_btn p {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .4px;
+  }
+
+  .top_link_btn a::before {
+    content: '';
+    top: 21px;
+    left: 24px;
+    width: 72px;
+  }
+
+  .top_link_btn a::after {
+    content: '';
+    top: -14px;
+    left: 88px;
+    width: 8px;
+  }
+
+  /* ポートフォリオスライダー */
+  .top_portfolio_slider {
+    top: 30%;
+  }
+
+  .top_portfolio_slides {
+    width: 94vw;
+  }
+
+  .top_portfolio_img {
+    width: 94vw;
+  }
+
+  /* スライドアロー */
+  .slide_arrow {
+    background-color: rgba(255, 255, 255, .7);
+  }
+
+  .top_portfolio_prev {
+    position: absolute;
+    top: 36vw;
+    left: 4px;
+  }
+
+  .top_portfolio_next {
+    position: absolute;
+    top: 36vw;
+    left: calc(94vw - 44px);
+  }
+  
+  /* アバウトセクション */
+  .top_about_ttlArea {
+    top: calc(18% - 8vw);
+    left: 3vw;
+  }
+
+  .top_about_text {
+    margin-bottom: 0;
+  }
+
+  .top_about_btn {
+    top: calc((48vw * 1) + (94vw * 0.3) + 44px);
+    left: 0;
+  }
+
+  .top_about_btn a::before {
+    left: 18px;
+    width: 78px;
+  }
+
+  .top_about_contentArea {
+    top: 28%;
+    left: 3vw;
+  }
+
+  .top_about_contentArea img {
+    width: 50vw;
+    margin-left: 0;
+  }
+
+  .top_about_contentArea p {
+    position: static;
+    font-size: 10px;
+    width: 94vw;
+  }
+
+  /* コンタクトセクション */
   
 }
