@@ -842,12 +842,6 @@ footer {
   }
 
   /* コンタクトセクション */
-  /* .top_contact_ttlWrapper {
-    top: -10%;
-    left: 40px;
-    transform: translateX(0);
-  } */
-
   .top_backtoTop_btn {
     left: auto;
     right: 40px;
@@ -1022,7 +1016,7 @@ footer {
   }
   
   .theme_bg p:last-child {
-    line-height: 1;
+    line-height: .96;
     text-indent: -.4em;
   }
 
@@ -1090,29 +1084,29 @@ footer {
     top: calc(95vw * 0.64 + 72px);
   }
   .top_link_btn > a {
-    width: 120px;
-    height: 32px;
+    width: 140px;
+    height: 40px;
     border-radius: 20px;
   }
 
   .top_link_btn p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
     letter-spacing: .4px;
   }
 
   .top_link_btn a::before {
     content: '';
-    top: 21px;
-    left: 24px;
-    width: 72px;
+    top: 26px;
+    left: 28px;
+    width: 88px;
   }
 
   .top_link_btn a::after {
     content: '';
-    top: -14px;
-    left: 88px;
-    width: 8px;
+    top: -18px;
+    left: 106px;
+    width: 12px;
   }
 
   /* ポートフォリオスライダー */
@@ -1161,8 +1155,8 @@ footer {
   }
 
   .top_about_btn a::before {
-    left: 18px;
-    width: 78px;
+    left: 22px;
+    width: 94px;
   }
 
   .top_about_contentArea {
@@ -1182,5 +1176,54 @@ footer {
   }
 
   /* コンタクトセクション */
+  .top_contact_ttlArea {
+    top: calc(18% - 8vw);
+    left: 3vw;
+  }
+
+  .top_contact_ttlWrapper {
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 10vh;
+  }
+
+  .top_contact_link {
+    top: auto;
+    left: 3vw;
+    width: 94vw;
+    padding-right: 3vw;
+    transform: none;
+  }
+
+  .top_contact_subText {
+    display: table;
+    font-size: 12px;
+    width: auto;
+  }
+
+  .top_contact_snsLink {
+    width: auto;
+  }
+
+  .top_contact_sns:first-child {
+    left: 50%;
+    transform: translateX(-112%);
+  }
   
+  .top_contact_sns:last-child {
+    right: 50%;
+    transform: translateX(112%);
+  }
+
+  .top_backtoTop_btn {
+    right: 3vw;
+    font-size: 16px;
+  }
+
+  .top_backtoTop_btn a::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+  }
 }
