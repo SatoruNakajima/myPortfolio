@@ -91,12 +91,12 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  animation: fadeIn_header 1.6s ease-in 0s 1 normal;
+  animation: fadeIn_header .2s ease-in 0s 1 normal;
 }
 
   @keyframes fadeIn_header {
     0% {opacity: 0;}
-    80% {opacity: 0;}
+    50% {opacity: 0;}
     100% {opacity: 1;}
   }
 
@@ -367,7 +367,7 @@ header {
   height: 100%;
   overflow: hidden;
   z-index: -100;
-  animation: fadeIn_bg .8s ease-in 0s 1 normal;
+  /* animation: fadeIn_bg .8s ease-in 0s 1 normal; */
 }
 
   @keyframes fadeIn_bg {
@@ -400,12 +400,12 @@ header {
   top: 40%;
   left: 40px;
   z-index: 10;
-  animation: fadeIn_nav 1.6s ease-in 0s 1 normal;
+  animation: fadeIn_nav .2s ease-in 0s 1 normal;
 }
 
   @keyframes fadeIn_nav {
     0% {opacity: 0;}
-    80% {opacity: 0;}
+    50% {opacity: 0;}
     100% {opacity: 1;}
   }
 
@@ -455,12 +455,12 @@ header {
   top: 25%;
   left: 18rem;
   z-index: 10;
-  animation: fadeIn_fv 2.4s ease-in 0s 1 normal;
+  animation: fadeIn_fv .2s ease-in 0s 1 normal;
 }
 
   @keyframes fadeIn_fv {
     0% {opacity: 0;}
-    90% {opacity: 0;}
+    50% {opacity: 0;}
     100% {opacity: 1;}
   }
 
@@ -469,6 +469,7 @@ header {
   font-weight: 700;
   white-space: nowrap;
   margin-bottom: 1rem;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, .2);
 }
 
 .top_section_text {
@@ -506,7 +507,7 @@ header {
   left: 50%;
   font-size: 2.2rem;
   transform: translateX(-50%);
-  animation: scroll_down 2s infinite 2.4s;
+  animation: scroll_down 2s infinite .2s;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;

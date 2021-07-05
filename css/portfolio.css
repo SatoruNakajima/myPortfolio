@@ -1,5 +1,37 @@
 @charset "utf-8";
 
-.ptf_thum img {
-  width: 30vw;
+/* 固定タイトル */
+.ptf_fix_ttl {
+  position: absolute;
+  top: 27%;
+  left: 60%;
+  z-index: 15;
+  font-size: 10.5rem;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, .2);
 }
+
+/* ページコンテンツ */
+.ptf_num {
+  position: absolute;
+  top: 38%;
+  left: 67%;
+  font-family: "ranga";
+  font-size: 10rem;
+  font-weight: 700;
+  color: #00235E;
+  letter-spacing: 5px;
+}
+
+.ptf_thum {
+  position: absolute;
+  top: 14%;
+  left: 16%;
+  z-index: 0;
+}
+
+.ptf_thum img {
+  width: 450px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+
