@@ -76,7 +76,7 @@
         <p>NAKAJIMA</p>
       </div>
     </div>
-  <!-- バックグラウンドここまで -->
+    <!-- バックグラウンドここまで -->
 
     <!-- ページ内リンク（画面左に固定） -->
       <nav class="ptf_localNav">
@@ -90,7 +90,9 @@
     <!-- ページ内リンクここまで -->
 
     <!-- 固定タイトル -->
-    <h2 class="ptf_fix_ttl">Portfolio</h2>
+    <div id="ttl_parallax" class="ptf_fix_ttl">
+      <h2 data-depth="0.05">Portfolio</h2>
+    </div>
       
     <!-- fullpageラッパー -->
     <ul id="ptf_fullpage" class="ptf_fullpage_wrapper">
@@ -103,6 +105,9 @@
           <p><span>overview</span>参考にするコーポレートサイトを選定しデザインを作成、その後コーディング。</p>
           <button><a href="">For Details</a></button>
         </div>
+        <button class="top_scroll_icon ptf_scroll_icon" type="button">
+          <a href="#ptf_02"><p>SCROLL</p></a>
+        </button>  
       </li>
       <!-- １つ目の作品ここまで -->
       
@@ -153,8 +158,8 @@
     </ul>
 
     <footer><p>©︎ 2021 TomokazuNakajima</p></footer>
-
-    
+  
+  
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js""></script>
     <script src="js/jquery.fullPage.js"></script>

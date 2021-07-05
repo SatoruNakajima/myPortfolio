@@ -20,6 +20,7 @@ $(function() {
 
 
 // パララックス
+// fullpage.jsに干渉してる。これ指定しないページはフルページ動作しない
   // bg
   var bg = document.getElementById('bg');
   var parallaxInstance = new Parallax(bg, {
@@ -27,7 +28,7 @@ $(function() {
   });
 
   // top_fv
-  var top_fv = document.getElementById('top_fv_parallax');
+  var top_fv = document.getElementById('ttl_parallax');
   var parallaxInstance = new Parallax(top_fv, {
     relativeInput: true
   });
@@ -35,7 +36,7 @@ $(function() {
 
 
 // フルページスクロール
-	$('#fullpage').fullpage({
+	$('#top_fullpage').fullpage({
 		autoScrolling:true,
 		menu: '#top_menu',
 		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact'],
@@ -60,7 +61,7 @@ $(function() {
 	$('#ptf_fullpage').fullpage({
 		autoScrolling:true,
 		menu: '#ptf_menu',
-		anchors: ['top_01', 'top_02', 'top_03', 'top_footer'],
+		anchors: ['ptf_01', 'ptf_02', 'ptf_03', 'ptf_contact'],
     onLeave: function(index, destination, direction){
             if(destination == 4 && direction =='down'){
                 //セクション4へ下にスクロールしたとき実行
