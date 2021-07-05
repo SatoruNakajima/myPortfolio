@@ -2,7 +2,6 @@ $(function() {
 
 // ローディングアニメ
   var loader = $('#loader');
-
     //ページの読み込みが完了したらアニメーションを非表示
     $(window).on('load',function(){
       loader.fadeOut();
@@ -55,8 +54,30 @@ $(function() {
               transition: '.3s'
             });
         }
-      
 	});
+
+
+	$('#ptf_fullpage').fullpage({
+		autoScrolling:true,
+		menu: '#ptf_menu',
+		anchors: ['top_01', 'top_02', 'top_03', 'top_footer'],
+    onLeave: function(index, destination, direction){
+            if(destination == 4 && direction =='down'){
+                //セクション4へ下にスクロールしたとき実行
+                $('footer').stop(true).css({
+                  bottom: '20px',
+                  transition: '.8s'
+                });
+            }
+            else if(index == 4 && direction =='up')
+            //セクション4を上にスクロールしたときに実行
+            $('footer').stop(true).css({
+              bottom: '-50px',
+              transition: '.3s'
+            });
+        }
+	});
+
 
 
 // スライダー
@@ -68,7 +89,5 @@ $(function() {
     prevArrow: '<button type="button"  aria-lavel="Previous" class="top_portfolio_prev slide_arrow">prev</button>',
     nextArrow: '<button type="button" aria-label="Next" class="top_portfolio_next slide_arrow">next</button>',
   });
-
-
 
 });

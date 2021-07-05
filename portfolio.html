@@ -79,16 +79,80 @@
   <!-- バックグラウンドここまで -->
 
     <!-- ページ内リンク（画面左に固定） -->
-      <nav class="top_localNav">
-      <ul id="top_menu" class="top_localNav_list">
-        <li data-menuanchor="top_fv" class="active"><a href="#top_fv">fv</a></li>
-        <li data-menuanchor="top_portfolio"><a href="#top_portfolio">portfolio</a></li>
-        <li data-menuanchor="top_about"><a href="#top_about">about</a></li>
-        <li data-menuanchor="top_contact"><a href="#top_contact">contact</a></li>
+      <nav class="ptf_localNav">
+      <ul id="ptf_menu" class="ptf_localNav_list">
+        <li data-menuanchor="ptf_01" class="active"><a href="#ptf_01">01</a></li>
+        <li data-menuanchor="ptf_02"><a href="#ptf_02">02</a></li>
+        <li data-menuanchor="ptf_03"><a href="#ptf_03">03</a></li>
+        <li data-menuanchor="ptf_contact"><a href="#ptf_contact">contact</a></li>
       </ul>
     </nav>
     <!-- ページ内リンクここまで -->
 
+    <!-- 固定タイトル -->
+    <h2 class="ptf_fix_ttl">Portfolio</h2>
+      
+    <!-- fullpageラッパー -->
+    <ul id="ptf_fullpage" class="ptf_fullpage_wrapper">
+      <!-- １つ目の作品 -->
+      <li class="section ptf_item">
+        <p class="ptf_num">01</p>
+        <div class="ptf_thum">
+          <a href=""><img src="img/portfolio-thum01.jpg" alt="ポートフォリオのサムネイル画像です。"></a>
+          <h3>TITLE.com</h3>
+          <p><span>overview</span>参考にするコーポレートサイトを選定しデザインを作成、その後コーディング。</p>
+          <button><a href="">For Details</a></button>
+        </div>
+      </li>
+      <!-- １つ目の作品ここまで -->
+      
+
+      <!-- ２つ目の作品 -->
+      <li class="section ptf_item">
+        <p class="ptf_num">02</p>
+        <div class="ptf_thum">
+          <a href=""><img src="img/portfolio-thum01.jpg" alt="ポートフォリオのサムネイル画像です。"></a>
+          <h3>TITLE.com</h3>
+          <p><span>overview</span>参考にするコーポレートサイトを選定しデザインを作成、その後コーディング。</p>
+          <button><a href="">For Details</a></button>
+        </div>
+      </li>
+      <!-- ２つ目の作品ここまで -->
+
+
+      <!-- ３つ目の作品 -->
+      <li class="section ptf_item">
+        <p class="ptf_num">03</p>
+        <div class="ptf_thum">
+          <a href=""><img src="img/portfolio-thum01.jpg" alt="ポートフォリオのサムネイル画像です。"></a>
+          <h3>TITLE.com</h3>
+          <p><span>overview</span>参考にするコーポレートサイトを選定しデザインを作成、その後コーディング。</p>
+          <button><a href="">For Details</a></button>
+        </div>
+        <ul class="pagination ptf_pagination">
+          <li class="page_num"><a href="">1</a></li>
+          <li class="page_num"><a href="">1</a></li>
+          <li class="page_num"><a href="">1</a></li>
+        </ul>
+      </li>
+      <!-- ３つ目の作品ここまで -->
+
+
+      <!-- コンタクトエリア -->
+      <li class="section ptf_item">
+        <ul class="footer_sns_link">
+          <li><a href="https://twitter.com/Satoru21540643" target="blanc">Twitter</a></li>
+          <li><a href="mailto:tomokazu04929@gmail.com">Mail</a></li>
+        </ul>
+          <button id="back_to_top" class="ptf_backtoTop_btn" type="button">
+            <a href="#ptf_01">Back to TOP</a>
+          </button>
+      </li>
+      <!-- コンタクトエリアここまで -->
+
+    </ul>
+
+    <footer><p>©︎ 2021 TomokazuNakajima</p></footer>
 
     
     <script src="js/jquery-3.6.0.min.js"></script>
