@@ -32,9 +32,68 @@
     <!-- スタイルシート読み込み -->
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
   </Head>
   <body>
+    <!-- ローディングアニメ -->
+    <div id="loader" class="loader">
+      <p class="loading">Now Loading ..</p>
+    </div>
+    <!-- ヘッダータイトル、メニュー（画面上部に固定） -->
+    <header>
+      <h1 class="header_ttl"><a href="./index.html">Tomokazu Nakajima</a></h1>
+      <button type="button" class="prev_page"><a href="./index.html">Previous Page</a></button>
+      <div class="header_menu">
+        <ul class="header_sns_link">
+          <li><a href="https://twitter.com/Satoru21540643" target="blanc">Twitter</a></li>
+          <li><a href="mailto:tomokazu04929@gmail.com">Mail</a></li>
+        </ul>
+        <button id="header_nav_btn" class="header_nav_btn" type="button">menu</button>
+      </div>
+      <nav class="header_nav">
+        <div class="header_nav_list">
+          <ul class="header_nav_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About Me</a></li>
+          </ul>
+          <ul class="header_nav_sns">
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Email</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ヘッダーここまで -->
+
+    <!-- バックグラウンドイメージ（画像を使う場合） -->
+    <!-- <img class="theme_img" src="" alt="このサイトの著者名が使われた背景画像です。"> -->
+    <!-- バックグラウンドイメージ（テキストでできる場合） -->
+    <div id="bg" class="theme_bg">
+      <div class="bg_parallax" data-depth="0.3">
+        <p>TOMOKAZU</p>
+        <p>NAKAJIMA</p>
+      </div>
+    </div>
+  <!-- バックグラウンドここまで -->
+
+    <!-- ページ内リンク（画面左に固定） -->
+      <nav class="top_localNav">
+      <ul id="top_menu" class="top_localNav_list">
+        <li data-menuanchor="top_fv" class="active"><a href="#top_fv">fv</a></li>
+        <li data-menuanchor="top_portfolio"><a href="#top_portfolio">portfolio</a></li>
+        <li data-menuanchor="top_about"><a href="#top_about">about</a></li>
+        <li data-menuanchor="top_contact"><a href="#top_contact">contact</a></li>
+      </ul>
+    </nav>
+    <!-- ページ内リンクここまで -->
+
+
     
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js""></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/main.js"></script>
   </body>
+</html>
