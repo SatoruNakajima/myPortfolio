@@ -253,22 +253,59 @@
 
   /* 縦幅768px以上 */
   @media screen and (min-height: 768px) {
+    .ptf_localNav {
+      top: 150px;
+      bottom: auto;
+    }
+
     .ptf_fix_ttl {
-      top: 15%;
-      left: 55%;
+      top: 15vh;
+      left: 54%;
       font-size: 12vw;
     }
 
     .ptf_num {
-      top: 30%;
-      left: 66%;
+      top: 27vh;
+      left: 78%;
       font-size: 10vw;;
+      z-index: 5;
     }
 
-    /* .ptf_thum {
-      top: 40%;
-      left: 40%;
-      transform: translateX(-50%);
-    } */
+    .ptf_thum {
+      top: 34%;
+      left: 18%;
+      width: 50vw;
+      /* transform: translateX(-50%); */
+    }
+
+    .ptf_thum img {
+      width: 100%;
+    }
+
+    .ptf_thum > p {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    /* スクロールアイコン */
+    .ptf_scroll_icon {
+      left: 78%
+    }
+
+    /* ページネーション */
+    .pagination {
+      left: 48%
+    }
+
+    /* コンタクトエリア */
+    .footer_sns_link {
+      height: 18vh;
+      margin-left: 10%;
+      width: 45%;
+    }
+    .ptf_backtoTop_btn {
+      left: 78%;
+      bottom: 7vh;
+    }
   }
 }

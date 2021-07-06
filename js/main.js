@@ -46,7 +46,8 @@ $(function() {
 		anchors: ['ptf_01', 'ptf_02', 'ptf_03', 'ptf_contact'],
     onLeave: function(index, destination, direction){
       var ttl = $('.ptf_fix_ttl'),
-          windowWidth = $(window).width();
+          windowWidth = $(window).width(),
+          windowHeight = $(window).height();
           
 
         if(destination == 4 && direction =='down'){
@@ -55,9 +56,14 @@ $(function() {
               bottom: '20px',
               transition: '.8s'
             });
-            if(windowWidth > 1024){
+            if(windowWidth > 1024 || windowWidth > 768 && windowHeight < 768){
               ttl.stop(true).css({
                 top: '4vh',
+                transition: 'top .65s'
+              });
+            } else {
+              ttl.stop(true).css({
+                top: '-3vh',
                 transition: 'top .65s'
               });
             }
@@ -67,9 +73,14 @@ $(function() {
             bottom: '-50px',
             transition: '.3s'
           });
-          if(windowWidth > 1024){
+          if(windowWidth > 1024 || windowWidth > 768 && windowHeight < 768){
             ttl.stop(true).css({
               top: '24vh',
+              transition: 'top .65s'
+            });
+          } else {
+            ttl.stop(true).css({
+              top: '15vh',
               transition: 'top .65s'
             });
           }
