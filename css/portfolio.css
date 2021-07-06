@@ -253,8 +253,22 @@
 
   /* 縦幅768px以上 */
   @media screen and (min-height: 768px) {
-    /* .ptf_fix_ttl {
+    .ptf_fix_ttl {
+      top: 15%;
+      left: 55%;
+      font-size: 12vw;
+    }
 
+    .ptf_num {
+      top: 30%;
+      left: 66%;
+      font-size: 10vw;;
+    }
+
+    /* .ptf_thum {
+      top: 40%;
+      left: 40%;
+      transform: translateX(-50%);
     } */
   }
 }
