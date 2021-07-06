@@ -6,6 +6,9 @@ $(function() {
     $(window).on('load',function(){
       loader.fadeOut();
     });
+    setTimeout(function(){
+      loader.fadeOut();
+    },1500);
 
 
 
