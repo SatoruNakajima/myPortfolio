@@ -35,58 +35,43 @@ $(function() {
   // パララックスここまで
 
 
+
   // フルページスクロール
-	$('#top_fullpage').fullpage({
-		autoScrolling:true,
-		menu: '#top_menu',
-		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact'],
-    onLeave: function(index, destination, direction){
-            if(destination == 4 && direction =='down'){
-                //セクション4へ下にスクロールしたとき実行
-                $('footer').stop(true).css({
-                  bottom: '20px',
-                  transition: '.8s'
-                });
-            }
-            else if(index == 4 && direction =='up')
-            //セクション4を上にスクロールしたときに実行
-            $('footer').stop(true).css({
-              bottom: '-50px',
-              transition: '.3s'
-            });
-        }
-	});
-
-
 	$('#ptf_fullpage').fullpage({
 		autoScrolling:true,
 		menu: '#ptf_menu',
 		anchors: ['ptf_01', 'ptf_02', 'ptf_03', 'ptf_contact'],
     onLeave: function(index, destination, direction){
-      var ttl = $('.ptf_fix_ttl');
+      var ttl = $('.ptf_fix_ttl'),
+          windowWidth = $(window).width();
+          
 
-            if(destination == 4 && direction =='down'){
-                //セクション4へ下にスクロールしたとき実行
-                $('footer').stop(true).css({
-                  bottom: '20px',
-                  transition: '.8s'
-                });
-                // ttl.stop(true).css({
-                //   top: '4px',
-                //   transition: 'top .2s'
-                // });
-            }
-            else if(index == 4 && direction =='up')
-            //セクション4を上にスクロールしたときに実行
+        if(destination == 4 && direction =='down'){
+            //セクション4へ下にスクロールしたとき実行
             $('footer').stop(true).css({
-              bottom: '-50px',
-              transition: '.3s'
+              bottom: '20px',
+              transition: '.8s'
             });
-            // ttl.stop(true).css({
-            //   top: '24px',
-            //   transition: 'top .2s'
-            // });
+            if(windowWidth > 1024){
+              ttl.stop(true).css({
+                top: '4vh',
+                transition: 'top .65s'
+              });
+            }
+        } else if(index == 4 && direction =='up'){
+          //セクション4を上にスクロールしたときに実行
+          $('footer').stop(true).css({
+            bottom: '-50px',
+            transition: '.3s'
+          });
+          if(windowWidth > 1024){
+            ttl.stop(true).css({
+              top: '24vh',
+              transition: 'top .65s'
+            });
+          }
         }
+    }
 	});
 
 

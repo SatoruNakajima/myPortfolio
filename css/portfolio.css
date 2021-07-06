@@ -2,7 +2,7 @@
 
 /* 固定タイトル */
 .ptf_fix_ttl {
-  position: absolute;
+  position: fixed;
   top: 24vh;
   left: 60%;
   z-index: 15;
@@ -224,12 +224,37 @@
 
 .footer_sns_link li {
   font-family: "Ranga";
-  font-size: 22px;
+  font-size: 32px;
   color: #00235e;
   margin-right: 30%;
+}
+
+.footer_sns_link li:hover {
+  color: #b9d1ea;
 }
 
 .ptf_backtoTop_btn {
   left: 68%;
   bottom: 8vh;
+}
+
+
+
+
+/* 横幅1024px以下 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  /* 縦幅768px以上 */
+  @media screen and (min-height: 768px) {
+    /* .ptf_fix_ttl {
+
+    } */
+  }
 }
