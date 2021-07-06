@@ -1,6 +1,6 @@
 $(function() {
 
-// ローディングアニメ
+  // ローディングアニメ
   var loader = $('#loader');
     //ページの読み込みが完了したらアニメーションを非表示
     $(window).on('load',function(){
@@ -10,7 +10,7 @@ $(function() {
 
 
 
-// ドロワーメニュー開閉
+  // ドロワーメニュー開閉
   var header_nav_btn = $('#header_nav_btn'),
       header_nav = $('.header_nav');
   header_nav_btn.click(function(){
@@ -19,8 +19,8 @@ $(function() {
   });
 
 
-// パララックス
-// fullpage.jsに干渉してる。これ指定しないページはフルページ動作しない
+  // パララックス
+  // fullpage.jsに干渉してる。これ指定しないページはフルページ動作しない
   // bg
   var bg = document.getElementById('bg');
   var parallaxInstance = new Parallax(bg, {
@@ -32,10 +32,10 @@ $(function() {
   var parallaxInstance = new Parallax(top_fv, {
     relativeInput: true
   });
-// パララックスここまで
+  // パララックスここまで
 
 
-// フルページスクロール
+  // フルページスクロール
 	$('#top_fullpage').fullpage({
 		autoScrolling:true,
 		menu: '#top_menu',
@@ -63,12 +63,18 @@ $(function() {
 		menu: '#ptf_menu',
 		anchors: ['ptf_01', 'ptf_02', 'ptf_03', 'ptf_contact'],
     onLeave: function(index, destination, direction){
+      var ttl = $('.ptf_fix_ttl');
+
             if(destination == 4 && direction =='down'){
                 //セクション4へ下にスクロールしたとき実行
                 $('footer').stop(true).css({
                   bottom: '20px',
                   transition: '.8s'
                 });
+                // ttl.stop(true).css({
+                //   top: '4px',
+                //   transition: 'top .2s'
+                // });
             }
             else if(index == 4 && direction =='up')
             //セクション4を上にスクロールしたときに実行
@@ -76,19 +82,14 @@ $(function() {
               bottom: '-50px',
               transition: '.3s'
             });
+            // ttl.stop(true).css({
+            //   top: '24px',
+            //   transition: 'top .2s'
+            // });
         }
 	});
 
 
 
-// スライダー
-// トップページポートフォリオ
-  $('.top_portfolio_slides').slick({
-    autoplay: false,
-		// autoplaySpeed: 3700,
-		arrows: true,
-    prevArrow: '<button type="button"  aria-lavel="Previous" class="top_portfolio_prev slide_arrow">prev</button>',
-    nextArrow: '<button type="button" aria-label="Next" class="top_portfolio_next slide_arrow">next</button>',
-  });
 
-});
+})

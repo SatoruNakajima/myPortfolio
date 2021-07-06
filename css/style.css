@@ -884,7 +884,7 @@ footer {
   transform: translateX(-50%);
   font-family: "Ranga", sans-serif;
   font-size: 14px;
-  transition: visibility 0s;
+  /* transition: visibility 0s; */
 }
 /* フッターここまで */
 
