@@ -1,9 +1,31 @@
 $(function() {
 
+  // フルページスクロール
+	$('#top_fullpage').fullpage({
+		autoScrolling:true,
+		menu: '#top_menu',
+		anchors: ['top_fv', 'top_portfolio', 'top_about', 'top_contact'],
+    onLeave: function(index, destination, direction){
+            if(destination == 4 && direction =='down'){
+                //セクション4へ下にスクロールしたとき実行
+                $('footer').stop(true).css({
+                  bottom: '20px',
+                  transition: '.8s'
+                });
+            }
+            else if(index == 4 && direction =='up'){
+              //セクション4を上にスクロールしたときに実行
+              $('footer').stop(true).css({
+                bottom: '-50px',
+                transition: '.3s'
+              });
+            }
+        }
+	});
 
 
-// スライダー
-// トップページポートフォリオ
+  // スライダー
+  // トップページポートフォリオ
   $('.top_portfolio_slides').slick({
     autoplay: false,
 		// autoplaySpeed: 3700,
