@@ -313,24 +313,24 @@
 /* スマホサイズ */
 @media screen and (max-width: 768px) {
   .ptf_localNav {
-    top: 16vh;
+    top: 14vh;
     bottom: auto;
   }
 
   .ptf_fix_ttl {
-    top: 15vh;
+    top: 13vh;
     left: 48%;
     font-size: 16vw;
   }
 
   .ptf_num {
-    top: 24vh;
+    top: 22vh;
     left: 64%;
     font-size: 16vw;
   }
 
   .ptf_thum {
-    top: 38vh;
+    top: 35vh;
     left: 5vw;
     width: 90vw;
   }
@@ -415,18 +415,6 @@
 
 
 @media screen and (max-width: 375px) {
-  .ptf_localNav {
-    top: 14vh;
-  }
-
-  .ptf_fix_ttl {
-    top: 13vh;
-  }
-
-  .ptf_num {
-    top: 22vh;
-  }
-
   .ptf_thum {
     top: 34vh;
   }
