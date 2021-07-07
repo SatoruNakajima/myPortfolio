@@ -33,12 +33,104 @@
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/work.css">
   </Head>
   <body>
+    <!-- ローディングアニメ -->
+    <div id="loader" class="loader">
+      <p class="loading">Now Loading ..</p>
+    </div>
+    <!-- ヘッダータイトル、メニュー（画面上部に固定） -->
+    <header>
+      <h1 class="header_ttl"><a href="./index.html">Tomokazu Nakajima</a></h1>
+      <button type="button" class="prev_page"><a href="./index.html">Previous Page</a></button>
+      <div class="header_menu">
+        <ul class="header_sns_link">
+          <li><a href="https://twitter.com/Satoru21540643" target="blanc">Twitter</a></li>
+          <li><a href="mailto:tomokazu04929@gmail.com">Mail</a></li>
+        </ul>
+        <button id="header_nav_btn" class="header_nav_btn" type="button">menu</button>
+      </div>
+      <nav class="header_nav">
+        <div class="header_nav_list">
+          <ul class="header_nav_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="">About Me</a></li>
+          </ul>
+          <ul class="header_nav_sns">
+            <li><a href="https://twitter.com/Satoru21540643" target="blanc">Twitter</a></li>
+            <li><a href="mailto:tomokazu04929@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ヘッダーここまで -->
     
-    <footer><p>©︎ 2021 TomokazuNakajima</p></footer>
+    <!-- バックグラウンドイメージ（画像を使う場合） -->
+    <!-- <img class="theme_img" src="" alt="このサイトの著者名が使われた背景画像です。"> -->
+    <!-- バックグラウンドイメージ（テキストでできる場合） -->
+    <div id="bg" class="theme_bg">
+      <div class="bg_parallax" data-depth="0.3">
+        <p>TOMOKAZU</p>
+        <p>NAKAJIMA</p>
+      </div>
+    </div>
+    <!-- バックグラウンドここまで -->
     
+    <!-- メインコンテンツ -->
+    <main class="work_wrapper">
+      <div class="work_ttl">
+        <h2><span>01</span>TITLE.com</h2>
+        <p>corporate site</p>
+      </div>
+      <img class="work_thumbnail" src="img/portfolio-thum01.jpg" alt="紹介する作品のサムネイル画像です。">
+
+      <!-- 解説をテーブルコンテンツとして配置 -->
+      <table>
+        <tr>
+          <th>my role</th>
+          <td>design : figma<br>coding : HTML/CSS/jQuery</td>
+        </tr>
+        <tr>
+          <th>length</th>
+          <td>3 weeks</td>
+        </tr>
+        <tr>
+          <th>concept</th>
+          <td>自分のスキルレベルを測るため、デザインツールを使いカンプを作成し、それをもとにコーディングまで行う。<br>参考にするコーポレートサイトとして、会社概要、事例、人材募集、理念などをトップページに配置する縦長のレイアウトを選定し、それぞれのセクションではイメージしやすい画像を貼り、詳細ページへのリンクも設置。<span>参考サイト https://demo.tcd.theme.com/tcd074/</span></td>
+        </tr>
+      </table>
+      <!-- 解説ここまで -->
+
+      <button class="top_scroll_icon ptf_scroll_icon" type="button">
+        <a href="#ptf_02"><p>SCROLL</p></a>
+      </button>
+
+      <!-- 紹介ページ全体のスクショ -->
+      <img class="work_screenshot" src="img/work_01_screenshot.jpg" alt="紹介する作品全体のスクリーンショットです。">
+
+      <!-- ページネーション -->
+      <ul class="pagination work_pagination">
+        <li class="work_prev"><a href="">TITLE.com</a></li>
+        <li class="work_visit"><a href="">TITLE.com</a></li>
+        <li class="ptf_next"><a href="">TITLE.com</a></li>
+      </ul>
+    </main>
     
+    <!-- フッターエリア -->
+    <div class="footer_area">
+      <ul class="footer_sns_link">
+        <li><a href="https://twitter.com/Satoru21540643" target="blanc">Twitter</a></li>
+        <li><a href="mailto:tomokazu04929@gmail.com">Email</a></li>
+      </ul>
+      <button id="back_to_top" class="work_backtoTop_btn top_backtoTop_btn" type="button">
+        <a href="">Back to TOP</a>
+      </button>
+    </div>
+
+    <!-- <footer><p>©︎ 2021 TomokazuNakajima</p></footer> -->
+  
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js""></script>
     <script src="js/main.js"></script>

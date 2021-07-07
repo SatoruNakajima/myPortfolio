@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.theme_bg {
+  position: fixed;
+}
+
+.work_thumbnail {
+  width: 50%;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
+}
+
+.work_screenshot {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
+}
