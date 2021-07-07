@@ -1015,6 +1015,29 @@ footer {
     margin-left: 3vw;
   }
 
+  /* 前ページへ戻る */
+  .prev_page {
+    top: 9vw;
+    left: 3.2vw;
+  }
+
+  .prev_page a {
+    width: 56px;
+    height: 24px;
+  }
+
+  .prev_page a::before {
+    content: '';
+    top: 7px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .prev_page a::after {
+    width: 52px;
+  }
+  /* 前ページへ戻るここまで */
+
   .header_menu {
     margin-top: 4vw;
     margin-right: 3vw;
