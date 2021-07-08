@@ -4,11 +4,94 @@
   position: fixed;
 }
 
+/* メインコンテンツ */
+.work_wrapper {
+  width: 96%;
+  margin: 0 auto;
+  border-top: .5px solid rgba(0, 0, 0, 0);
+}
+
+.work_ttl {
+  display: inline-block;
+  margin: 14% 0 10% 10%;
+}
+
+.work_ttl h2 {
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: .8;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+}
+
+.work_ttl span {
+  font-size: 8vw;
+  font-weight: 700;
+  letter-spacing: .2vw;
+}
+
+.work_ttl p {
+  font-size: 1.4vw;
+  line-height: .8;
+  text-align: end;
+}
+
+/* サムネイル画像 */
 .work_thumbnail {
+  position: absolute;
+  top: 14%;
+  right: 10%;
+  z-index: -5;
   width: 50%;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
 }
 
+/* テーブルコンテンツ */
+table {
+  width: 70%;
+  margin-left: 10%;
+  margin-bottom: 14%;
+}
+
+th {
+  width: 16%;
+  height: 80px;
+  font-size: 18px;
+  /* font-weight: 700; */
+  color: #00235E;
+  text-align: start;
+}
+
+td {
+  width: 84%;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: start;
+}
+
+.work_site_link {
+  display: block;
+  font-size: 14px;
+  text-align: end;
+  margin-top: 8px;
+}
+/* テーブルコンテンツここまで */
+
+/* スクロールアイコン */
+.work_scroll_icon {
+  bottom: 6%;
+  left: 85%;
+  animation: scroll_down 2s infinite .2s;
+}
+
+@keyframes scroll_down {
+  0% {bottom: 6%;}
+  70% {bottom: 4%;}
+  100% {bottom: 6%;}
+}
+/* スクロールアイコンここまで */
+
+
+/* 紹介ページ全体のスクショ */
 .work_screenshot {
   width: 50%;
   margin: 0 auto;

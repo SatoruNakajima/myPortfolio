@@ -1,5 +1,16 @@
 $(function() {
 
+
+      // パララックス
+  // fullpage.jsに干渉してる。これ指定しないページはフルページ動作しない
+  // top_fv
+  var top_fv = document.getElementById('ttl_parallax');
+  var parallaxInstance = new Parallax(top_fv, {
+    relativeInput: true
+  });
+  // パララックスここまで
+
+
   // フルページスクロール
 	$('#top_fullpage').fullpage({
 		autoScrolling:true,
