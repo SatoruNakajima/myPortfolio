@@ -32,4 +32,20 @@ $(function() {
   // パララックスここまで
 
 
+  // ページ途中で画面固定されるトップへ戻るボタン
+  $('#back_to_top').each(function () {
+    var win = $(window),
+        btn = $(this),
+        btnPosi = btn.offset().top;
+
+    win.on('scroll', function () {
+      if (win.scrollTop() + win.height() > btnPosi) {
+        btn.addClass('btn_fix');
+      } else {
+        btn.removeClass('btn_fix');
+      }
+    });
+    // win.trigger('scroll');
+  });
+
 })

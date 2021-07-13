@@ -94,6 +94,80 @@ td {
 /* 紹介ページ全体のスクショ */
 .work_screenshot {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 8vh;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
+}
+
+/* ページネーション */
+.work_pagination {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  width: 50%;
+  margin: 0 auto 40px;
+}
+
+.work_prev {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #b9d1ea;
+  pointer-events: none;
+}
+
+.work_prev a::before {
+  content: '';
+  position: absolute;
+  top: .2rem;
+  left: -1.5rem;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid #b9d1ea;
+  border-left: 1px solid #b9d1ea;
+  transform: rotate(45deg);
+}
+
+.work_visit {
+  color: #00235e;
+  pointer-events: none;
+}
+
+.work_next {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #b9d1ea;
+  pointer-events: none;
+}
+
+.work_next a::after {
+  content: '';
+  position: absolute;
+  top: .2rem;
+  right: -1.5rem;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid #b9d1ea;
+  border-right: 1px solid #b9d1ea;
+  transform: rotate(45deg);
+}
+/* ページネーションここまで */
+
+/* トップへ戻るボタン */
+.work_backtoTop_btn {
+  position: absolute;
+  top: 250vh;
+  left: 80%;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+  opacity: 0;
+}
+/* 画面固定のスタイル */
+.work_backtoTop_btn.btn_fix {
+  position: fixed;
+  top: auto;
+  bottom: 8vh;
+  opacity: 1;
+  transition: bottom .5s, opacity .5s;
 }
