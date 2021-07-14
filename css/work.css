@@ -167,7 +167,18 @@ td {
 .work_backtoTop_btn.btn_fix {
   position: fixed;
   top: auto;
-  bottom: 8vh;
+  bottom: 12vh;
   opacity: 1;
   transition: bottom .5s, opacity .5s;
 }
+/* トップへ戻るボタンここまで */
+
+/* フッター */
+footer {
+  position: static;
+  transform: none;
+  text-align: center;
+  padding: 2vh 0;
+}
+
+
