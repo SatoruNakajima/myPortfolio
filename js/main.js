@@ -11,8 +11,6 @@ $(function() {
     },800);
 
 
-
-
   // ドロワーメニュー開閉
   var header_nav_btn = $('#header_nav_btn'),
       header_nav = $('.header_nav');
@@ -32,6 +30,36 @@ $(function() {
   // パララックスここまで
 
 
+  // クリックで少しスクロールして消えるスクロールボタン
+  $('#scroll_down').each(function () {
+    var win = $(window),
+        btn = $(this);
+
+    win.on('scroll', function () {
+      if(win.scrollTop() > 0){
+        btn.css({
+          opacity: 0,
+          transition: '.3s'
+        });
+      } else {
+        btn.css({
+          opacity: 1,
+          transition: '.3s'
+        });
+      }
+    });
+
+    var el = scrollableElement('html', 'body');
+    btn.on('click', function (event) {
+      event.preventDefault();
+      $(el).animate({
+        scrollTop: 300
+      },400);
+    });
+  });
+  // スクロールボタンここまで
+
+
   // ページ途中で画面固定されるトップへ戻るボタン
   $('#back_to_top').each(function () {
     var win = $(window),
@@ -46,14 +74,37 @@ $(function() {
       }
     });
 
-    var scrollEle = scrollableElement('html', 'body');
+    // スムーズスクロール
+    var el = scrollableElement('html', 'body');
 
     btn.on('click', function (event) {
       event.preventDefault();
-      scrollEle.animate({
+      $(el).animate({
         scrollTop: 0
-      }, 300);
+      }, 500);
     });
   });
+  // トップへ戻るボタンここまで
+
+
+  // scrollTopが利用できる要素を検出する関数
+  function scrollableElement () {
+    var i, len, el, $el, scrollable;
+    for (i = 0, len = arguments.length; i < len; i++) {
+      el =arguments[i],
+      $el = $(el);
+      if ($el.scrollTop() > 0) {
+        return el;
+      } else {
+        $el.scrollTop(1);
+        scrollable = $el.scrollTop() > 0;
+        $el.scrollTop(0);
+        if (scrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
 
 })
