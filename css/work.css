@@ -190,3 +190,66 @@ footer {
 }
 
 
+
+/* 横幅1024px以下 */
+@media screen and (max-width: 1024px) {
+  table {
+    margin-bottom: 8%;
+  }
+
+  .work_screenshot {
+    width: 70%;
+  }
+
+  .work_backtoTop_btn {
+    left: 86%;
+  }
+
+  /* 縦幅768px以上 */
+  @media screen and (min-height: 768px) {
+    .work_scroll_icon {
+      display: none;
+    }
+  }
+}
+
+
+/* スマホサイズ */
+@media screen and (max-width: 768px) {
+  .work_ttl {
+    position: relative;
+    margin-top: 22%;
+    margin-bottom: 4%;
+    margin-left: 60%;
+  }
+
+  .work_ttl h2 {
+    font-size: 6vw;
+  }
+
+  .work_ttl span {
+    position: absolute;
+    bottom: 0;
+    left: 110%;
+    font-size: 12vw;
+  }
+
+  .work_ttl p {
+    font-size: 3vw;
+  }
+
+  /* サムネイル画像 */
+  .work_thumbnail {
+    position: static;
+    left: 50%;
+    width: 80%;
+    margin: 0 auto 5%;
+  }
+
+  /* テーブルコンテンツ */
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+ 
