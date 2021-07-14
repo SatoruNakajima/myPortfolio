@@ -171,6 +171,14 @@ td {
   opacity: 1;
   transition: bottom .5s, opacity .5s;
 }
+
+.work_backtoTop_btn:hover {
+  color: #b9d1ea;
+  text-shadow: none;
+}
+.work_backtoTop_btn:hover a::before {
+  border-color: #b9d1ea;
+}
 /* トップへ戻るボタンここまで */
 
 /* フッター */
