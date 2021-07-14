@@ -45,7 +45,15 @@ $(function() {
         btn.removeClass('btn_fix');
       }
     });
-    // win.trigger('scroll');
+
+    var scrollEle = scrollableElement('html', 'body');
+
+    btn.on('click', function (event) {
+      event.preventDefault();
+      scrollEle.animate({
+        scrollTop: 0
+      }, 300);
+    });
   });
 
 })
