@@ -118,7 +118,7 @@ td {
 .work_prev a::before {
   content: '';
   position: absolute;
-  top: .2rem;
+  top: .1rem;
   left: -1.5rem;
   display: block;
   width: 12px;
@@ -218,9 +218,9 @@ footer {
 @media screen and (max-width: 768px) {
   .work_ttl {
     position: relative;
-    margin-top: 22%;
+    margin-top: 28%;
     margin-bottom: 4%;
-    margin-left: 60%;
+    margin-left: 62%;
   }
 
   .work_ttl h2 {
@@ -231,25 +231,77 @@ footer {
     position: absolute;
     bottom: 0;
     left: 110%;
-    font-size: 12vw;
+    font-size: 16vw;
+    letter-spacing: .8vw;
   }
 
   .work_ttl p {
-    font-size: 3vw;
+    font-size: 1.6vw;
+    letter-spacing: .1vw;
   }
 
   /* サムネイル画像 */
   .work_thumbnail {
     position: static;
     left: 50%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto 5%;
   }
 
   /* テーブルコンテンツ */
   table {
+    width: 90%;
+    margin: 0 auto 8%;
+  }
+
+  th {
+    display: block;
+    width: auto;
+    height: 5vw;
+    font-size: 4vw;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    font-size: 3vw;
+    margin-bottom: 6%;
+    padding-left: 6%;
+  }
+
+  .work_site_link {
+    font-size: 3vw;
+  }
+  /* テーブルコンテンツここまで */
+
+  /* スクロールアイコン */
+  .work_scroll_icon {
+    bottom: 3%;
+    left: 98%;
+  }
+
+  @keyframes scroll_down {
+    0% {bottom: 3%;}
+    70% {bottom: 1%;}
+    100% {bottom: 3%;}
+  }  
+
+  /* 紹介ページ全体のスクショ */
+  .work_screenshot {
+    width: 90%;
+    margin-bottom: 6vh;
+  }
+
+  /* ページネーション */
+  .work_pagination {
     width: 80%;
-    margin: 0 auto;
+    font-size: 12px;
+    margin-bottom: 8vh;
+  }
+
+  /* トップへ戻るボタン */
+  .work_backtoTop_btn {
+    
   }
 }
  
