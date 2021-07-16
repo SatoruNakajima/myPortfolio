@@ -367,13 +367,7 @@ header {
   height: 100%;
   overflow: hidden;
   z-index: -100;
-  /* animation: fadeIn_bg .8s ease-in 0s 1 normal; */
 }
-
-  @keyframes fadeIn_bg {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
 
 .theme_bg p {
   font-family: Ranga;
