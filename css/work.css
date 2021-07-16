@@ -301,7 +301,29 @@ footer {
 
   /* トップへ戻るボタン */
   .work_backtoTop_btn {
-    
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    left: auto;
+    right: 8%;
+    width: 8vw;
+    height: 8vw;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
   }
-}
- 
+
+  .work_backtoTop_btn a::before {
+    content: '';
+    display: block;
+    top: 3vw;
+    left: 50%;
+    width: 3.2vw;
+    height: 3.2vw;
+    border-width: .4vw;
+  }
+
+  /* フッター */
+  .footer_sns_link{
+    padding-top: 48px;
+  }
