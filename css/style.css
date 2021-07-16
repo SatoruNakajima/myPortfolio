@@ -513,7 +513,7 @@ header {
   overflow: hidden;
 }
 
-.top_scroll_icon p::after {
+.top_scroll_icon span::after {
   content: '';
   display: block;
   position: relative;
