@@ -216,6 +216,10 @@ footer {
 
 /* スマホサイズ */
 @media screen and (max-width: 768px) {
+  .theme_bg p:last-child {
+    line-height: 1;
+  }
+
   .work_ttl {
     position: relative;
     margin-top: 28%;
