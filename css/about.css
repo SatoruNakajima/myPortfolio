@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.theme_bg {
+  position: fixed;
+}
+
+.about_ttlArea {
+  position: absolute;
+  top: 28%;
+  left: 60%;
+}
+
+.about_intro img {
+  width: 240px;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+}
+
+.about_textArea {
+  width: 60%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+}
+
+.about_auth {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.about_auth span {
+  font-family: 'Ranga';
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+.about_text {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: .2px;
+}
+
+/* スキルセクション */
+.about_skills {
+  width: 100%;
+  background-color: #b9d1ea;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.about_skill_item {
+  width: 70%;
+}
