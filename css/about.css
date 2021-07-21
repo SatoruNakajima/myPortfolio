@@ -12,7 +12,7 @@
 
 .about_intro img {
   width: 240px;
-  margin-top: 12%;
+  margin-top: 15vh;
   margin-bottom: 5%;
   margin-left: 20%;
 }
@@ -24,8 +24,8 @@
 }
 
 .about_auth {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: normal;
   margin-bottom: 4%;
 }
 
@@ -33,7 +33,8 @@
   font-family: 'Ranga';
   font-size: 20px;
   font-weight: 400;
-  margin-left: 16px;
+  margin-left: 24px;
+  vertical-align: middle;
 }
 
 .about_text {
@@ -44,12 +45,100 @@
 
 /* スキルセクション */
 .about_skills {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
   width: 100%;
-  background-color: #b9d1ea;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  height: 64vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_skills::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #618abb;
+  opacity: .1;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
 
 .about_skill_item {
   width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 5%;
 }
+
+.about_skill_item:last-child {
+  margin-bottom: 0;
+}
+
+.about_skill_ttl {
+  font-family: 'Ranga';
+  font-size: 40px;
+  font-weight: 400;
+  text-align: end;
+  color: #00235e;
+  width: 14%;
+}
+
+.about_skill_ttl::after {
+  content: '';
+  position: relative;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #00235e;
+}
+
+.about_skill_img {
+  width: 20%;
+}
+
+.about_skill_text {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: .2px;
+  color: #00235e;
+  width: 66%;
+}
+/* スキルセクションここまで */
+
+/* コンタクトセクション */
+.about_contact {
+ height: calc(100vh - 64px);
+ padding-top: 30vh;
+}
+
+.about_contact_ttl {
+  width: 60%;
+  margin: 0 auto 14vh;
+  line-height: .55;
+  border-bottom: 1px solid #00235e;
+  text-shadow: none;
+}
+
+/* フッターエリア */
+footer {
+  position: static;
+  transform: none;
+  text-align: center;
+}
+
+footer p {
+  height: 64px;
+  line-height: 64px;
+}
+
