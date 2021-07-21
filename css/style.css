@@ -374,7 +374,8 @@ header {
   font-size: 80vh;
   font-weight: 700;
   line-height: .75;
-  opacity: .1;
+  color: #b9d1ea;
+  opacity: .4;
 }
 
 .theme_bg p:first-child {
