@@ -6,11 +6,11 @@ $(function() {
     //ページの読み込みが完了したらアニメーションを非表示
     loader.fadeOut();
     
-    var loadVh = $(window).width();
+    var loadVh = $(window).height();
       // スマホのアドレスバー対策 bgサイズ固定
       if (window.matchMedia('(max-width: 500px)').matches) {
-        $('.theme_bg p').css({
-          fontSize: loadVh * 0.79 + 'px'
+        $('.theme_bg').css({
+          height: loadVh + 'px'
         });
       };
     });
