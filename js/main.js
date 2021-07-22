@@ -6,13 +6,13 @@ $(function() {
     //ページの読み込みが完了したらアニメーションを非表示
     loader.fadeOut();
     
-    var loadVh = $(window).height();
-      // スマホのアドレスバー対策 bgサイズ固定
-      if (window.matchMedia('(max-width: 500px)').matches) {
-        $('.theme_bg').css({
-          height: loadVh + 'px'
-        });
-      };
+    // var loadVh = $(window).height();
+    //   // スマホのアドレスバー対策 bgサイズ固定
+    //   if (window.matchMedia('(max-width: 500px)').matches) {
+    //     $('.theme_bg').css({
+    //       height: loadVh + 'px'
+    //     });
+    //   };　できない！！！！！！！！！！
     });
     setTimeout(function(){
       loader.fadeOut();
