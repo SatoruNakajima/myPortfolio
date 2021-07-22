@@ -2,9 +2,17 @@ $(function() {
 
   // ローディングアニメ
   var loader = $('#loader');
+  $(window).on('load',function(){
     //ページの読み込みが完了したらアニメーションを非表示
-    $(window).on('load',function(){
-      loader.fadeOut();
+    loader.fadeOut();
+    
+    var loadVh = $(window).width();
+      // スマホのアドレスバー対策 bgサイズ固定
+      if (window.matchMedia('(max-width: 500px)').matches) {
+        $('.theme_bg p').css({
+          fontSize: loadVh * 0.79 + 'px'
+        });
+      };
     });
     setTimeout(function(){
       loader.fadeOut();
