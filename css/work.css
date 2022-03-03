@@ -111,8 +111,11 @@ td {
   position: relative;
   top: 0;
   left: 0;
-  color: #b9d1ea;
-  pointer-events: none;
+  color: #00235e;
+}
+
+.work_prev:hover {
+  opacity: .6;
 }
 
 .work_prev a::before {
@@ -123,22 +126,24 @@ td {
   display: block;
   width: 12px;
   height: 12px;
-  border-bottom: 1px solid #b9d1ea;
-  border-left: 1px solid #b9d1ea;
+  border-bottom: 1px solid #00235e;
+  border-left: 1px solid #00235e;
   transform: rotate(45deg);
 }
 
 .work_visit {
-  color: #00235e;
-  pointer-events: none;
+  color: #b9d1ea;
 }
 
 .work_next {
   position: relative;
   top: 0;
   left: 0;
-  color: #b9d1ea;
-  pointer-events: none;
+  color: #00235e;
+}
+
+.work_next:hover {
+  opacity: .6;
 }
 
 .work_next a::after {
@@ -149,8 +154,8 @@ td {
   display: block;
   width: 12px;
   height: 12px;
-  border-top: 1px solid #b9d1ea;
-  border-right: 1px solid #b9d1ea;
+  border-top: 1px solid #00235e;
+  border-right: 1px solid #00235e;
   transform: rotate(45deg);
 }
 /* ページネーションここまで */
